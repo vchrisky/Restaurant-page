@@ -7,11 +7,477 @@
 </head>
 <body>
     <header>
-        <nav><button type="button">Home</button></nav>
-        <nav><button type="button">Menu</button></nav>
-        <nav><button type="button">Services</button></nav>
-        <nav><button type="button">About</button></nav>
+        <div class="sidebar">
+            <nav><img class="close-sidebar" src="../assets/close_24px.svg" alt="close-sidebar"></nav>
+            <nav><button type="button">Home</button></nav>
+            <nav><button type="button">Menu</button></nav>
+            <nav><button type="button">About</button></nav>
+        </div>
+        <div class="navbar">
+            <nav><button type="button">La Bella Italia</button></nav>
+            <nav class="hide-mobile">
+                <nav><button type="button">Home</button></nav>
+                <nav><button type="button">Menu</button></nav>
+                <nav><button type="button">About</button></nav>
+            </nav>
+            <nav><img class="open-sidebar" src="../assets/ico-menu.svg" alt="open-sidebar" width="100px"></nav>
+        </div>
     </header>
-    <div id="content"></div>
+    <div id="content">
+        <!-- Content
+		============================================= -->
+		<section id="content">
+			<div class="content-wrap py-0" style="overflow: visible;">
+				<div class="container">
+
+					<div id="tab-restuarant">
+
+						<ul class="nav canvas-alt-tabs2 tabs nav-pills nav-fill mb-5" id="canvas-tab-nav2" role="tablist">
+							<li class="nav-item" role="presentation">
+								<button class="nav-link active" id="canvas-tabs-breakfast-tab" data-bs-toggle="pill" data-bs-target="#tabs-breakfast"
+									type="button" role="tab" aria-controls="canvas-tabs-breakfast" aria-selected="true"><img src="../assets/images/icons/breakfast.svg" alt="Image"> Breakfast</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="canvas-tabs-salad-tab" data-bs-toggle="pill" data-bs-target="#tabs-salad"
+									type="button" role="tab" aria-controls="canvas-tabs-salad" aria-selected="false"><img src="../assets/images/icons/salads.svg" alt="Image"> Salads</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="canvas-tabs-pizza-tab" data-bs-toggle="pill" data-bs-target="#tabs-pizza"
+									type="button" role="tab" aria-controls="canvas-tabs-pizza" aria-selected="false"><img src="../assets/images/icons/pizza.svg" alt="Image"> Pizza</button>
+							</li>
+							<li class="nav-item" role="presentation">
+								<button class="nav-link" id="canvas-tabs-dessert-tab" data-bs-toggle="pill" data-bs-target="#tabs-dessert"
+									type="button" role="tab" aria-controls="canvas-tabs-dessert" aria-selected="false"><img src="../assets/images/icons/dessert.svg" alt="Image"> Dessert</button>
+							</li>
+						</ul>
+
+						<div id="canvas-tab-alt-content" class="tab-content mt-4">
+							<div class="tab-pane fade show active" id="tabs-breakfast" role="tabpanel" aria-labelledby="canvas-tabs-breakfast-tab"
+								tabindex="0">
+
+								<div class="row gutter-40">
+									<div class="col-lg-3 col-md-6">
+										<div class="portfolio-item">
+											<a href="#" class="portfolio-image"><img src="../assets/images/menu/breakfast/1.jpg" alt="1" class="rounded"></a>
+											<div class="portfolio-desc pt-2">
+												<h4 class="mb-1"><a href="#">Banana Pancake</a></h4>
+												<div class="item-price">&dollar; 19.49</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg-3 col-md-6">
+										<div class="portfolio-item">
+											<a href="#" class="portfolio-image"><img src="../assets/images/menu/breakfast/2.jpg" alt="1" class="rounded"></a>
+											<div class="portfolio-desc pt-2">
+												<h4 class="mb-1"><a href="#">Raisins Croissant</a></h4>
+												<div class="item-price">&dollar; 11.99</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg-3 col-md-6">
+										<div class="portfolio-item">
+											<a href="#" class="portfolio-image"><img src="../assets/images/menu/breakfast/3.jpg" alt="1" class="rounded"></a>
+											<div class="portfolio-desc pt-2">
+												<h4 class="mb-1"><a href="#">Healthy Omelette</a></h4>
+												<div class="item-price">&dollar; 8.00</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg-3 col-md-6">
+										<div class="portfolio-item">
+											<a href="#" class="portfolio-image"><img src="../assets/images/menu/breakfast/4.jpg" alt="1" class="rounded"></a>
+											<div class="portfolio-desc pt-2">
+												<h4 class="mb-1"><a href="#">Fried Eggs with Bread</a></h4>
+												<div class="item-price">&dollar; 13.19</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg-3 col-md-6">
+										<div class="portfolio-item">
+											<a href="#" class="portfolio-image"><img src="../assets/images/menu/breakfast/5.jpg" alt="1" class="rounded"></a>
+											<div class="portfolio-desc pt-2">
+												<h4 class="mb-1"><a href="#">Cheese Croissant</a></h4>
+												<div class="item-price">&dollar; 7.49</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg-3 col-md-6">
+										<div class="portfolio-item">
+											<a href="#" class="portfolio-image"><img src="../assets/images/menu/breakfast/6.jpg" alt="1" class="rounded"></a>
+											<div class="portfolio-desc pt-2">
+												<h4 class="mb-1"><a href="#">Croissant and Coffee</a></h4>
+												<div class="item-price">&dollar; 11.99</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg-3 col-md-6">
+										<div class="portfolio-item">
+											<a href="#" class="portfolio-image"><img src="../assets/images/menu/breakfast/7.jpg" alt="1" class="rounded"></a>
+											<div class="portfolio-desc pt-2">
+												<h4 class="mb-1"><a href="#">Blueberries Waffle</a></h4>
+												<div class="item-price">&dollar; 29.00</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg-3 col-md-6">
+										<div class="portfolio-item">
+											<a href="#" class="portfolio-image"><img src="../assets/images/menu/breakfast/8.jpg" alt="1" class="rounded"></a>
+											<div class="portfolio-desc pt-2">
+												<h4 class="mb-1"><a href="#">Fried Egg With Beans</a></h4>
+												<div class="item-price">&dollar; 5.99</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+							<div class="tab-pane fade" id="tabs-salad" role="tabpanel" aria-labelledby="canvas-tabs-salad-tab" tabindex="0">
+								<div class="row gutter-40">
+									<div class="col-lg-3 col-md-6">
+										<div class="portfolio-item">
+											<a href="#" class="portfolio-image"><img src="../assets/images/menu/salads/1.jpg" alt="1" class="rounded"></a>
+											<div class="portfolio-desc pt-2">
+												<h4 class="mb-1"><a href="#">Pomegranate Salad</a></h4>
+												<div class="item-price">&dollar; 19.49</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg-3 col-md-6">
+										<div class="portfolio-item">
+											<a href="#" class="portfolio-image"><img src="../assets/images/menu/salads/2.jpg" alt="1" class="rounded"></a>
+											<div class="portfolio-desc pt-2">
+												<h4 class="mb-1"><a href="#">Greek Salad</a></h4>
+												<div class="item-price">&dollar; 11.99</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg-3 col-md-6">
+										<div class="portfolio-item">
+											<a href="#" class="portfolio-image"><img src="../assets/images/menu/salads/3.jpg" alt="1" class="rounded"></a>
+											<div class="portfolio-desc pt-2">
+												<h4 class="mb-1"><a href="#">Fruit Lover</a></h4>
+												<div class="item-price">&dollar; 8.00</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg-3 col-md-6">
+										<div class="portfolio-item">
+											<a href="#" class="portfolio-image"><img src="../assets/images/menu/salads/4.jpg" alt="1" class="rounded"></a>
+											<div class="portfolio-desc pt-2">
+												<h4 class="mb-1"><a href="#">Egg Salad</a></h4>
+												<div class="item-price">&dollar; 13.19</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg-3 col-md-6">
+										<div class="portfolio-item">
+											<a href="#" class="portfolio-image"><img src="../assets/images/menu/salads/5.jpg" alt="1" class="rounded"></a>
+											<div class="portfolio-desc pt-2">
+												<h4 class="mb-1"><a href="#">Mushroom &amp; Avocado</a></h4>
+												<div class="item-price">&dollar; 7.49</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg-3 col-md-6">
+										<div class="portfolio-item">
+											<a href="#" class="portfolio-image"><img src="../assets/images/menu/salads/6.jpg" alt="1" class="rounded"></a>
+											<div class="portfolio-desc pt-2">
+												<h4 class="mb-1"><a href="#">Ceasar Salad</a></h4>
+												<div class="item-price">&dollar; 11.99</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg-3 col-md-6">
+										<div class="portfolio-item">
+											<a href="#" class="portfolio-image"><img src="../assets/images/menu/salads/7.jpg" alt="1" class="rounded"></a>
+											<div class="portfolio-desc pt-2">
+												<h4 class="mb-1"><a href="#">Thai Salad</a></h4>
+												<div class="item-price">&dollar; 29.00</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg-3 col-md-6">
+										<div class="portfolio-item">
+											<a href="#" class="portfolio-image"><img src="../assets/images/menu/salads/8.jpg" alt="1" class="rounded"></a>
+											<div class="portfolio-desc pt-2">
+												<h4 class="mb-1"><a href="#">Supreme Veggie</a></h4>
+												<div class="item-price">&dollar; 5.99</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="tabs-pizza" role="tabpanel" aria-labelledby="canvas-tabs-pizza-tab" tabindex="0">
+								<div class="row gutter-40">
+									<div class="col-lg-3 col-md-6">
+										<div class="portfolio-item">
+											<a href="#" class="portfolio-image"><img src="../assets/images/menu/pizza/1.jpg" alt="1" class="rounded"></a>
+											<div class="portfolio-desc pt-2">
+												<h4 class="mb-1"><a href="#">Pizza Tomatino</a></h4>
+												<div class="item-price">&dollar; 19.49</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg-3 col-md-6">
+										<div class="portfolio-item">
+											<a href="#" class="portfolio-image"><img src="../assets/images/menu/pizza/2.jpg" alt="1" class="rounded"></a>
+											<div class="portfolio-desc pt-2">
+												<h4 class="mb-1"><a href="#">Pizza Margerita</a></h4>
+												<div class="item-price">&dollar; 12.99</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg-3 col-md-6">
+										<div class="portfolio-item">
+											<a href="#" class="portfolio-image"><img src="../assets/images/menu/pizza/3.jpg" alt="1" class="rounded"></a>
+											<div class="portfolio-desc pt-2">
+												<h4 class="mb-1"><a href="#">Greasy Italian</a></h4>
+												<div class="item-price">&dollar; 17.00</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg-3 col-md-6">
+										<div class="portfolio-item">
+											<a href="#" class="portfolio-image"><img src="../assets/images/menu/pizza/4.jpg" alt="1" class="rounded"></a>
+											<div class="portfolio-desc pt-2">
+												<h4 class="mb-1"><a href="#">Deluxe Veggie</a></h4>
+												<div class="item-price">&dollar; 22.19</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg-3 col-md-6">
+										<div class="portfolio-item">
+											<a href="#" class="portfolio-image"><img src="../assets/images/menu/pizza/5.jpg" alt="1" class="rounded"></a>
+											<div class="portfolio-desc pt-2">
+												<h4 class="mb-1"><a href="#">Pizza Rustica</a></h4>
+												<div class="item-price">&dollar; 17.49</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg-3 col-md-6">
+										<div class="portfolio-item">
+											<a href="#" class="portfolio-image"><img src="../assets/images/menu/pizza/6.jpg" alt="1" class="rounded"></a>
+											<div class="portfolio-desc pt-2">
+												<h4 class="mb-1"><a href="#">Pizza Bianca</a></h4>
+												<div class="item-price">&dollar; 21.99</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg-3 col-md-6">
+										<div class="portfolio-item">
+											<a href="#" class="portfolio-image"><img src="../assets/images/menu/pizza/7.jpg" alt="1" class="rounded"></a>
+											<div class="portfolio-desc pt-2">
+												<h4 class="mb-1"><a href="#">Pizza Quattro</a></h4>
+												<div class="item-price">&dollar; 11.99</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg-3 col-md-6">
+										<div class="portfolio-item">
+											<a href="#" class="portfolio-image"><img src="../assets/images/menu/pizza/8.jpg" alt="1" class="rounded"></a>
+											<div class="portfolio-desc pt-2">
+												<h4 class="mb-1"><a href="#">Pizza Roma</a></h4>
+												<div class="item-price">&dollar; 15.99</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade" id="tabs-dessert" role="tabpanel" aria-labelledby="canvas-tabs-dessert-tab" tabindex="0">
+								<div class="row gutter-40">
+									<div class="col-lg-3 col-md-6">
+										<div class="portfolio-item">
+											<a href="#" class="portfolio-image"><img src="../assets/images/menu/desserts/1.jpg" alt="1" class="rounded"></a>
+											<div class="portfolio-desc pt-2">
+												<h4 class="mb-1"><a href="#">Chocolate Fudge</a></h4>
+												<div class="item-price">&dollar; 19.49</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg-3 col-md-6">
+										<div class="portfolio-item">
+											<a href="#" class="portfolio-image"><img src="../assets/images/menu/desserts/2.jpg" alt="1" class="rounded"></a>
+											<div class="portfolio-desc pt-2">
+												<h4 class="mb-1"><a href="#">Blueberry Cake</a></h4>
+												<div class="item-price">&dollar; 11.99</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg-3 col-md-6">
+										<div class="portfolio-item">
+											<a href="#" class="portfolio-image"><img src="../assets/images/menu/desserts/3.jpg" alt="1" class="rounded"></a>
+											<div class="portfolio-desc pt-2">
+												<h4 class="mb-1"><a href="#">Truffle Coffee</a></h4>
+												<div class="item-price">&dollar; 8.00</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg-3 col-md-6">
+										<div class="portfolio-item">
+											<a href="#" class="portfolio-image"><img src="../assets/images/menu/desserts/4.jpg" alt="1" class="rounded"></a>
+											<div class="portfolio-desc pt-2">
+												<h4 class="mb-1"><a href="#">Strawberry Velvet</a></h4>
+												<div class="item-price">&dollar; 13.19</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg-3 col-md-6">
+										<div class="portfolio-item">
+											<a href="#" class="portfolio-image"><img src="../assets/images/menu/desserts/5.jpg" alt="1" class="rounded"></a>
+											<div class="portfolio-desc pt-2">
+												<h4 class="mb-1"><a href="#">Delicious Blueberry</a></h4>
+												<div class="item-price">&dollar; 7.49</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg-3 col-md-6">
+										<div class="portfolio-item">
+											<a href="#" class="portfolio-image"><img src="../assets/images/menu/desserts/6.jpg" alt="1" class="rounded"></a>
+											<div class="portfolio-desc pt-2">
+												<h4 class="mb-1"><a href="#">Herbs &amp; Pomegranate</a></h4>
+												<div class="item-price">&dollar; 11.99</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg-3 col-md-6">
+										<div class="portfolio-item">
+											<a href="#" class="portfolio-image"><img src="../assets/images/menu/desserts/7.jpg" alt="1" class="rounded"></a>
+											<div class="portfolio-desc pt-2">
+												<h4 class="mb-1"><a href="#">Chocolate &amp; Raspberry Tart</a></h4>
+												<div class="item-price">&dollar; 29.00</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg-3 col-md-6">
+										<div class="portfolio-item">
+											<a href="#" class="portfolio-image"><img src="../assets/images/menu/desserts/8.jpg" alt="1" class="rounded"></a>
+											<div class="portfolio-desc pt-2">
+												<h4 class="mb-1"><a href="#">Fruits Cake</a></h4>
+												<div class="item-price">&dollar; 5.99</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="section mb-0 mt-3" style="padding: 80px 0; background: #F5F5F5 url('../assets/images/food-pattern.png') repeat center center;">
+					<div class="container">
+						<div class="heading-block border-bottom-0 text-center mb-4">
+							<span class="font-primary ls-1 color">Steps of Order</span>
+							<h3 class="text-transform-none font-secondary ls-0" style="font-size: 52px; line-height: 1.3;">How do you Get your Food</h3>
+						</div>
+
+						<div class="clear"></div>
+
+						<div class="row mt-5 g-5">
+							<div class="col-lg-4 col-sm-6">
+								<div class="feature-box media-box">
+									<div class="fbox-media" style="width: 60px; height: 60px">
+										<img src="../assets/images/icons/route.svg" alt="Image">
+									</div>
+									<div class="fbox-content px-0">
+										<h3>1. Select Your Location</h3>
+										<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas omnis nam molestias minus ipsa!</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-4 col-sm-6">
+								<div class="feature-box media-box">
+									<div class="fbox-media" style="width: 60px; height: 60px">
+										<img src="../assets/images/icons/shop.svg" alt="Image">
+									</div>
+									<div class="fbox-content px-0">
+										<h3>2. Choose your Food</h3>
+										<p>Facere aliquam itaque quia recusandae, corporis fugit fugiat eaque, accusamus officiis reprehenderit.</p>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-lg-4 col-sm-6">
+								<div class="feature-box media-box">
+									<div class="fbox-media" style="width: 75px; height: 60px">
+										<img src="../assets/images/icons/delivery-bg.svg" alt="Image">
+									</div>
+									<div class="fbox-content px-0">
+										<h3>3. Your Item is on the Way</h3>
+										<p>Velit id facilis odit aliquid laudantium. Tempore, sequi. Harum nesciunt, magni aperiam est?</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="section m-0 bg-transparent" style="padding: 80px 0 70px;">
+					<div class="container">
+						<div class="mx-auto d-flex justify-content-center text-center" style="max-width: 900px;">
+							<h3 class="mb-0 ls-0">Get $30 on Your First Order <a href="#" class="button button-circle button-xlarge button-light text-white ls-0 text-transform-none mt-0 mb-1 ms-3" style="position: relative;"><span>Order Now</span> <i class="bi-arrow-right fw-semibold"></i></a></h3>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div style="position: absolute; bottom: 0; left: 0; width: 100%; z-index: 3; background: url('../assets/images/sketch-header.png') repeat center bottom; background-size: auto 100%; height: 40px; margin-bottom: -10px;"></div>
+		</section><!-- #content end -->
+    </div>
+    
+    <!-- Footer
+    ============================================= -->
+    <footer id="footer" class="dark" style="background: url('../assets/images/footer-bg.jpg')  repeat center center / cover; background-size: auto 100%;; padding: 20px 0 22px">
+        <!-- Copyrights
+        ============================================= -->
+        <div id="copyrights" class="bg-transparent pb-4">
+            <div class="container">
+
+                <div class="row justify-content-between col-mb-30">
+                    <div class="col-12 col-md-auto text-center text-md-start">
+                        <span class="font-primary">&copy; Canvas Inc. 2021. All Rights Reserved.</span>
+                    </div>
+
+                    <div class="col-12 col-md-auto text-center text-md-end">
+                        <div class="copyrights-menu copyright-links">
+                            <a href="#">Home</a>/<a href="#">About Us</a>/<a href="#">Team</a>/<a href="#">Clients</a>/<a href="#">Contact</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div><!-- #copyrights end -->
+    </footer><!-- #footer end -->
 </body>
 </html>
