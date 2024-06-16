@@ -1,14 +1,4 @@
 function createElements() {
-    const closeSidebar = document.querySelector('.close-sidebar');
-    const openSidebar = document.querySelector('.open-sidebar');
-    const sideBar = document.querySelector('.sidebar');
-    closeSidebar.addEventListener('click', () => {
-        sideBar.style.display = 'none';
-    })
-    openSidebar.addEventListener('click', () => {
-        sideBar.style.display = 'initial';
-    })
-
 
     const contentDiv = document.querySelector('#content');
     
@@ -56,17 +46,19 @@ function createElements() {
     const heroSection = contentDiv.querySelector('#greeting-section');
     createElement({
         nodeName: 'h2',
+        className: 'font-secondary',
         textContent: 'Welcome to La Bella Italia.'
         }, 
         heroSection);
     createElement({
         nodeName: 'p',
+        className: 'font-primary dark mb-1 mt-3',
         textContent: 'Experience the authentic taste of Italy in the heart of the city.'
         },
         heroSection);   
 
-    console.log(contentDiv);
-    createElement({className: 'section', id: 'main-section'}, contentDiv);
+    // console.log(contentDiv);
+    createElement({className: 'section bg-color', id: 'main-section'}, contentDiv);
     const section = contentDiv.querySelector('#main-section');
     
     createElement({className: 'container'}, section);
@@ -81,14 +73,14 @@ function createElements() {
     
     createElement({
         nodeName: 'h2', 
-        className: 'heading',
+        className: 'heading font-secondary',
         textContent: 'Taste from Italy.'
         }, 
         rowDiv);
 
     createElement({
         nodeName: 'p',
-        className: 'sub-heading hide-mobile',
+        className: 'sub-heading hide-mobile dark',
         textContent: 'Who Needs a Boyfriend when Pizza And WiFi are both available.'
         },
         rowDiv);
@@ -124,8 +116,8 @@ function createElements() {
         },
         aboutSection); 
     
-    console.log(staticContent);
-    console.log(rowDiv);
+    // console.log(staticContent);
+    // console.log(rowDiv);
 }
 
 export default createElements;
