@@ -28,9 +28,9 @@ function createElements() {
                     shortName = 'wifi';
                     break;
             }
-            element.src = `../assets/icons/${shortName}-white.svg`;
+            element.src = `/assets/icons/${shortName}-white.svg`;
             element.width = '42';
-            element.height = '42';
+            element.height = '42'; 
             element.alt = `${shortName}-icon`;
         });
         

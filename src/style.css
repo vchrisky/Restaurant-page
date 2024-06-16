@@ -923,7 +923,7 @@ main, #content {
 }
 
 .hero {
-    background-image: url('../assets/1.jpg');
+    background-image: url('/assets/1.jpg');
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
